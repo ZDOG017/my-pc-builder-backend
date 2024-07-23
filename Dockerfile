@@ -14,7 +14,23 @@ RUN apk add --no-cache \
     yarn \
     dumb-init \
     udev \
-    ttf-opensans
+    ttf-opensans \
+    chromium \
+    nss \
+    freetype \
+    harfbuzz \
+    ca-certificates \
+    ttf-freefont \
+    nodejs \
+    npm \
+    yarn \
+    dumb-init \
+    udev \
+    ttf-opensans \
+    git \
+    python3 \
+    make \
+    g++
 
 # Add user so we don't need --no-sandbox
 RUN addgroup -S pptruser && adduser -S -G pptruser pptruser \
